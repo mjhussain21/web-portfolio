@@ -62,3 +62,30 @@ main {
     overflow: hidden; }
     main#home .lg-heading {
       margin-top: 20vh; }
+
+.menu-btn {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  z-index: 3;
+  cursor: pointer; }
+  .menu-btn:focus {
+    outline: 0; }
+    .menu-btn:focus .menu-btn__line {
+      background-color: #eece1a; }
+  .menu-btn__line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background-color: #fff;
+    transition: all 0.5s ease-out; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .menu-btn__line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+      background-color: #eece1a; }
+    .menu-btn.close .menu-btn__line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .menu-btn__line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
+      background-color: #eece1a; }
