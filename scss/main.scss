@@ -1,6 +1,13 @@
-$primary-color: #444;
+//Base styles
+@import "modules/mixins";
+@import "modules/color";
+@import "modules/typography";
 
-body {
-  background-color: $primary-color;
-  color: #fff;
-}
+
+//Components
+@import "partials/base";
+
+
+
+
+
