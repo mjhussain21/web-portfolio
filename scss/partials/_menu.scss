@@ -6,10 +6,8 @@
     right: 35px;
     z-index: 3;
     cursor: pointer;
-    //@include easeOut(0.2s);
     &:focus {
       outline: 0;
-      //background-color: $secondary-color;
       #{$parent}-btn__line {
         background-color: $secondary-color;
       }

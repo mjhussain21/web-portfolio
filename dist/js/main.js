@@ -5,9 +5,7 @@ const menuBranding = document.querySelector('.menu-branding');
 const menuNav = document.querySelector('.menu-nav');
 const navItems = document.querySelectorAll('.menu-nav__item');
 
-//initial menu state
-//true = open;
-//false = closed ;
+
 
 let showMenu = false;
 
@@ -23,8 +21,11 @@ function toggleMenu() {
   //loop through Nav Items
   navItems.forEach(item => item.classList.toggle('show'));
 
+}
 
-
+  //initial menu state
+  //true = open;
+  //false = closed ;
   // //if overlay is not shown
   // if (!showMenu) {
   //   menuBtn.classList.add('close');
@@ -55,4 +56,3 @@ function toggleMenu() {
 
   //   showMenu = false;
   // }
-}
