@@ -7,7 +7,7 @@ const navItems = document.querySelectorAll('.menu-nav__item');
 
 
 
-let showMenu = false;
+
 
 menuBtn.addEventListener('click', toggleMenu);
 
@@ -26,6 +26,9 @@ function toggleMenu() {
   //initial menu state
   //true = open;
   //false = closed ;
+
+  // let showMenu = false;
+
   // //if overlay is not shown
   // if (!showMenu) {
   //   menuBtn.classList.add('close');

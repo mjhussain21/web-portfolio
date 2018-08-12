@@ -29,3 +29,11 @@ $home-img: url(../img/bg.jpg);
     }
   }
 }
+
+// Delay each nav item slide by 0.1s
+
+@for $x from 1 through 4 {
+  .menu-nav__item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
+  }
+}
