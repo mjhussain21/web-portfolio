@@ -15,6 +15,9 @@ $home-img: url(../img/bg.jpg);
       background-image: $home-img;
       background-attachment: fixed;
       background-size: cover;
+     // background-position: center;
+      //background-image:
+      //min-height: 100%;
 
       &:before {
         content: '';
@@ -35,5 +38,15 @@ $home-img: url(../img/bg.jpg);
 @for $x from 1 through 4 {
   .menu-nav__item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
+  }
+}
+
+
+// Media Queries
+
+
+@mixin bp-small {
+  @media screen and (min-width: 768px){
+    @content;
   }
 }

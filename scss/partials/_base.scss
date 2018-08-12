@@ -4,10 +4,15 @@
   width: 100%;
 }
 
-
 main {
- padding: 4rem;
- height: 100%;  
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  height: 100%;  
+
+  @include bp-small {
+    padding: 4rem;
+  }
 
  .social {
    margin-top: 1rem;
@@ -26,6 +31,6 @@ main {
    overflow: hidden;
    .lg-heading{
      margin-top: 20vh;
-   }
- }
+    }
+  }
 }

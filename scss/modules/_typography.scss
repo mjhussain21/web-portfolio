@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
 body {
   @include background;
   background-color: $primary-color;
@@ -19,15 +26,24 @@ h1, h2, h3 {
 }
 
 .lg-heading {
-  font-size: 6rem; // default HTML font size = 16px, REM(16px * 6px);
+ font-size: 4rem;
+ line-height: 1;
+ margin-bottom: 1rem;
+  @include bp-small {
+    font-size: 6rem; // default HTML font size = 16px, REM(16px * 6px);
+  }
+
 }
 
 .sm-heading {
-  font-size: 2rem; // default HTML font size = 16px, REM(16px * 6px);
+  font-size: 1.5rem; // default HTML font size = 16px, REM(16px * 6px);
   margin-bottom: 2rem;
   padding: 10px;
   display:inline-block;
   background-color: rgba(lighten($primary-color, 2), 0.5);
+  @include bp-small {
+    font-size: 2rem;
+  }
 }
 
 .text-secondary{
