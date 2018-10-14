@@ -5,7 +5,7 @@ $home-img: url(../img/bg.jpg);
   transition: all $time ease-out; 
 }
 
-@mixin background-Opacity($color, $opacity){
+@mixin background-opacity($color, $opacity){
   background-color: rgba($color, $opacity);
 }
 
@@ -26,7 +26,7 @@ $home-img: url(../img/bg.jpg);
         right: 0;
         width: 100%;
         height: 100%;
-        @include background-Opacity($primary-color, 0.9);
+        @include background-opacity($primary-color, 0.9);
         z-index: -1;
       }
     }
@@ -42,9 +42,17 @@ $home-img: url(../img/bg.jpg);
 }
 
 
+//set text color
+
+@function set-text-color($color) {
+   @if (lightness($color) > 40 ){
+     @return #000;
+   } @else {
+     @return #fff;
+   }
+}
+
 // Media Queries
-
-
 @mixin bp-small {
   @media screen and (min-width: 768px){
     @content;

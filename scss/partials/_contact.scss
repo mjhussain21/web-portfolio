@@ -1,0 +1,30 @@
+.contact-box {
+  $parent: &;
+  &__content {
+    font-size: 0.9rem;
+    @include easeOut(0.5s);
+    @include bp-small {
+      font-size: 2rem;
+      border: 3px solid $white;
+      display: flex;
+      justify-content: center;
+      font-size: 1.75rem;
+      padding: 12px;
+    }
+
+    &:hover {
+      padding: 0.5rem 1.5rem;
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      #{$parent}__heading{
+        color: set-text-color($secondary-color);
+      }
+    }
+  }  
+  &__heading {
+    margin:0;
+  }
+  &__text {
+    margin: 0
+  }
+}

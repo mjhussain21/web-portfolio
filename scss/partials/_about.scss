@@ -1,0 +1,82 @@
+.about {
+  &__info {
+     display: grid;
+     grid-gap: 30px;
+     grid-template-areas:
+     'bioimg'
+     'bio'
+     'job1'
+     'job2'
+     'job3';
+      grid-template-columns: 1fr;
+      justify-items: center;
+
+      @include bp-small {
+        grid-template-areas:
+        'bioimg bio bio'
+        'job1 job2 job3';
+        grid-template-columns: repeat(3, 1fr);
+     }
+  }
+
+  &__bio-img {
+    grid-area: bioimg
+  }
+
+  &__bio {
+    grid-area: bio;
+    @include bp-small {
+      text-align: left;
+      font-size: 1.2rem;
+    }
+  }
+
+  &:nth-child(1n) {
+   border: 4px solid red;
+  }
+  
+}
+
+.job-card {
+  background: lighten($primary-color, 5);
+  padding: 1rem 1.2rem;
+  border-bottom: $secondary-color 5px solid;
+  font-weight: normal;
+  @include bp-small {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+
+  &:nth-child(3){
+    grid-area:job1;
+  }
+
+  &:nth-child(4){
+    grid-area:job2;
+  }
+
+  &:nth-child(5){
+    grid-area:job3
+  }
+
+  &__heading {
+   font-size: 1.5rem;
+  }
+
+  &__sub-txt{
+   margin: 10px;
+   font-size: 1rem;
+   font-weight: normal;
+   font-style: italic;
+   color: $secondary-color;
+
+  }
+
+  &__info {
+   font-size: 1rem;
+   @include bp-small {
+    text-align: left;
+   }
+   
+  }
+}
