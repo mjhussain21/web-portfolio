@@ -24,7 +24,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background-image: url(../img/bg.jpg);
@@ -40,6 +40,7 @@ body {
       background-color: rgba(68, 68, 68, 0.9);
       z-index: -1; }
 
+.verdana
 h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
@@ -69,6 +70,30 @@ h1, h2, h3 {
 a {
   color: #fff;
   text-decoration: none; }
+
+.list__item {
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 10px;
+  line-height: 1.4em; }
+
+.button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #FFFFFF;
+  margin: 25px 0 10px;
+  border-radius: 0.12em;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  transition: all 0.2s; }
+  .button--full {
+    display: block; }
+  .button:hover {
+    color: #444;
+    background-color: #eece1a; }
 
 .header {
   position: fixed;

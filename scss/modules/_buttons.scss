@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #FFFFFF;
+  margin: 25px 0 10px;
+  border-radius: 0.12em;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: $white;
+  text-align: center;
+  transition: all 0.2s;
+
+  &--full {
+    display: block;
+  }
+  
+  &:hover{
+    color:$primary-color;
+    background-color: $secondary-color;
+   }
+  }

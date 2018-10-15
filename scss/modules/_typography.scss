@@ -15,9 +15,11 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:  Verdana, Geneva, sans-serif;
   line-height: 1.5;
 }
+
+.verdana
 
 h1, h2, h3 {
   margin: 0;
@@ -57,4 +59,13 @@ a {
   text-decoration: none;
 }
 
+
+.list {
+  &__item {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+  }
+}
 
