@@ -287,6 +287,14 @@ a {
     @media screen and (min-width: 768px) {
       .job-card__info {
         text-align: left; } }
+  .job-card__img {
+    width: 100%;
+    border: 2px solid #fff; }
+    @media screen and (min-width: 768px) {
+      .job-card__img {
+        height: 155px;
+        object-fit: cover;
+        object-position: left; } }
 
 #footer {
   text-align: center;

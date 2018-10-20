@@ -79,4 +79,14 @@
    }
    
   }
+
+  &__img {
+    width: 100%;
+    border: 2px solid $white;
+    @include bp-small {
+      height: 155px;
+      object-fit: cover;
+      object-position: left;
+    }
+  }
 }
