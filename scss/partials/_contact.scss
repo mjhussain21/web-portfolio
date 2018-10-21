@@ -1,7 +1,8 @@
 .contact-box {
   $parent: &;
   &__content {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    text-align: center;
     @include easeOut(0.5s);
     @include bp-small {
       font-size: 2rem;

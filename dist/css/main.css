@@ -236,8 +236,8 @@ a {
           transform: translate3d(0, 0, 0); } }
 
 .portrait {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   border: solid 3px #eece1a;
   background-image: url("../img/picture.jpg");
@@ -325,7 +325,8 @@ a {
   height: 60px; }
 
 .contact-box__content {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
+  text-align: center;
   transition: all 0.5s ease-out; }
   @media screen and (min-width: 768px) {
     .contact-box__content {
