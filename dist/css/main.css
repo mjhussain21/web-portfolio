@@ -27,7 +27,7 @@ body {
   font-family: Verdana, Geneva, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background-image: url(../img/bg.jpg);
+    background-image: url(../img/js-bg.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:before {
@@ -49,16 +49,22 @@ h1, h2, h3 {
   font-size: 4rem;
   line-height: 1;
   margin-bottom: 1rem;
-  margin-top: 50px; }
+  margin-top: 50px;
+  text-align: center; }
   @media screen and (min-width: 768px) {
     .lg-heading {
       font-size: 6rem; } }
+  .lg-heading--home {
+    font-size: 2.5rem; }
+    @media screen and (min-width: 768px) {
+      .lg-heading--home {
+        font-size: 6rem; } }
 
 .sm-heading {
   font-size: 1.5rem;
   margin-bottom: 2rem;
   padding: 10px;
-  display: inline-block;
+  text-align: center;
   background-color: rgba(73, 73, 73, 0.5); }
   @media screen and (min-width: 768px) {
     .sm-heading {
@@ -103,7 +109,6 @@ a {
 .main {
   position: relative;
   align-items: center;
-  text-align: center;
   padding: 2rem;
   min-height: calc(100vh - 60px); }
   @media screen and (min-width: 768px) {
@@ -113,29 +118,34 @@ a {
   @media screen and (min-width: 768px) {
     .main {
       padding: 4rem; } }
-  .main .social-icon {
-    padding: 0.4rem;
-    color: #fff; }
-    .main .social-icon:hover {
-      color: #eece1a;
-      transition: all 0.5s ease-out; }
+  .main .social {
+    text-align: center; }
+    .main .social-icon {
+      padding: 0.4rem;
+      color: #fff; }
+      .main .social-icon:hover {
+        color: #eece1a;
+        transition: all 0.5s ease-out; }
 
 .menu {
   position: fixed;
   top: 0;
   width: 100%;
   visibility: hidden; }
-  @media screen and (min-width: 768px) {
-    .menu {
-      opacity: 0.9; } }
   .menu.show {
     visibility: visible; }
   .menu-btn {
     position: absolute;
-    top: 35px;
-    right: 35px;
+    top: 20px;
+    right: 20px;
     z-index: 3;
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: black;
+    padding: 12px; }
+    @media screen and (min-width: 768px) {
+      .menu-btn {
+        top: 35px;
+        right: 35px; } }
     .menu-btn:focus {
       outline: 0; }
       .menu-btn:focus .menu-btn__line {
@@ -146,6 +156,8 @@ a {
       margin: 0 0 5px 0;
       background-color: #fff;
       transition: all 0.5s ease-out; }
+      .menu-btn__line:last-of-type {
+        margin-bottom: 0; }
     .menu-btn.close {
       transform: rotate(180deg); }
       .menu-btn.close .menu-btn__line:nth-child(1) {
@@ -228,12 +240,14 @@ a {
   height: 150px;
   border-radius: 50%;
   border: solid 3px #eece1a;
-  background-image: url("../img/portrait_small.jpg"); }
+  background-image: url("../img/picture.jpg");
+  background-position: center;
+  background-size: cover; }
   @media screen and (min-width: 768px) {
     .portrait {
-      width: 200px;
-      height: 200px;
-      background-image: url("../img/portrait.jpg"); } }
+      width: 210px;
+      height: 220px;
+      background-image: url("../img/picture.jpg"); } }
 
 .about__info {
   display: grid;
@@ -245,12 +259,20 @@ a {
     .about__info {
       grid-template-areas: 'bioimg bio bio' 'job1 job2 job3';
       grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .about__info {
+      grid-template-areas: 'bioimg' 'bio' 'job1' 'job2' 'job3';
+      grid-template-columns: 1fr;
+      border: 2px solid yellow; } }
 
 .about__bio-img {
-  grid-area: bioimg; }
+  grid-area: bioimg;
+  align-self: center;
+  justify-self: center; }
 
 .about__bio {
-  grid-area: bio; }
+  grid-area: bio;
+  text-align: center; }
   @media screen and (min-width: 768px) {
     .about__bio {
       text-align: left;
@@ -275,18 +297,17 @@ a {
   .job-card:nth-child(5) {
     grid-area: job3; }
   .job-card__heading {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    text-align: center; }
   .job-card__sub-txt {
     margin: 10px;
     font-size: 1rem;
     font-weight: normal;
     font-style: italic;
-    color: #eece1a; }
+    color: #eece1a;
+    text-align: center; }
   .job-card__info {
     font-size: 1rem; }
-    @media screen and (min-width: 768px) {
-      .job-card__info {
-        text-align: left; } }
   .job-card__img {
     width: 100%;
     border: 2px solid #fff; }

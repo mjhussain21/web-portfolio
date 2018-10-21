@@ -17,14 +17,28 @@
         'job1 job2 job3';
         grid-template-columns: repeat(3, 1fr);
      }
+
+     @include bp-medium {
+      grid-template-areas:
+      'bioimg'
+      'bio'
+      'job1'
+      'job2'
+      'job3';
+      grid-template-columns: 1fr;
+      border: 2px solid yellow;
+     }
   }
 
   &__bio-img {
-    grid-area: bioimg
+    grid-area: bioimg;
+    align-self: center;
+    justify-self: center;
   }
 
   &__bio {
     grid-area: bio;
+    text-align: center;
     @include bp-small {
       text-align: left;
       font-size: 1.2rem;
@@ -61,6 +75,7 @@
 
   &__heading {
    font-size: 1.5rem;
+   text-align: center;
   }
 
   &__sub-txt{
@@ -69,14 +84,12 @@
    font-weight: normal;
    font-style: italic;
    color: $secondary-color;
+   text-align: center;
 
   }
 
   &__info {
    font-size: 1rem;
-   @include bp-small {
-    text-align: left;
-   }
    
   }
 

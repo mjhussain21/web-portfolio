@@ -1,5 +1,5 @@
 $show-home-img: true;
-$home-img: url(../img/bg.jpg);
+$home-img: url(../img/js-bg.jpg);
 
 @mixin easeOut ($time) {
   transition: all $time ease-out; 
@@ -15,9 +15,6 @@ $home-img: url(../img/bg.jpg);
       background-image: $home-img;
       background-attachment: fixed;
       background-size: cover;
-     // background-position: center;
-      //background-image:
-      //min-height: 100%;
 
       &:before {
         content: '';
@@ -55,6 +52,12 @@ $home-img: url(../img/bg.jpg);
 // Media Queries
 @mixin bp-small {
   @media screen and (min-width: 768px){
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media (min-width: 768px) and (max-width: 1024px) {
     @content;
   }
 }

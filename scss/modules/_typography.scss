@@ -17,6 +17,7 @@ body {
   margin: 0;
   font-family:  Verdana, Geneva, sans-serif;
   line-height: 1.5;
+
 }
 
 .verdana
@@ -32,8 +33,16 @@ h1, h2, h3 {
  line-height: 1;
  margin-bottom: 1rem;
  margin-top: 50px;
+ text-align: center;
   @include bp-small {
     font-size: 6rem; // default HTML font size = 16px, REM(16px * 6px);
+  }
+
+  &--home {
+    font-size: 2.5rem;
+    @include bp-small {
+      font-size: 6rem;
+    }
   }
 
 }
@@ -42,7 +51,7 @@ h1, h2, h3 {
   font-size: 1.5rem; // default HTML font size = 16px, REM(16px * 6px);
   margin-bottom: 2rem;
   padding: 10px;
-  display:inline-block;
+  text-align: center;
   background-color: rgba(lighten($primary-color, 2), 0.5);
   @include bp-small {
     font-size: 2rem;
