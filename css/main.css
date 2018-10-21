@@ -253,17 +253,19 @@ a {
           transform: translate3d(0, 0, 0); } }
 
 .portrait {
-  width: 160px;
-  height: 160px;
+  width: 43%;
+  height: 90%;
   border: solid 3px #eece1a;
   background-image: url("../img/picture.jpg");
   background-position: center;
   background-size: cover; }
   @media screen and (min-width: 768px) {
     .portrait {
-      width: 210px;
-      height: 210px;
-      background-image: url("../img/picture.jpg"); } }
+      width: 250px;
+      height: 250px; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .portrait {
+      height: auto; } }
 
 .about__info {
   display: grid;
@@ -283,7 +285,9 @@ a {
 .about__bio-img {
   grid-area: bioimg;
   align-self: center;
-  justify-self: center; }
+  justify-self: center;
+  width: 50%;
+  border: 3px solid; }
 
 .about__bio {
   grid-area: bio;
@@ -327,12 +331,15 @@ a {
     font-size: 1rem; }
   .job-card__img {
     width: 100%;
-    border: 2px solid #fff; }
-    @media screen and (min-width: 768px) {
+    border: 2px solid #fff;
+    object-fit: cover;
+    object-position: left; }
+    @media (min-width: 768px) and (max-width: 1024px) {
       .job-card__img {
-        height: 155px;
-        object-fit: cover;
-        object-position: left; } }
+        height: auto; } }
+    @media screen and (min-width: 1024px) {
+      .job-card__img {
+        height: 155px; } }
 
 .icon-container {
   text-align: center;
