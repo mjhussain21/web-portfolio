@@ -178,15 +178,18 @@
 }
 
 .portrait {
-  width: 160px;
-  height: 160px;
+
+  width: 43%;
+  height: 90%;
   border: solid 3px $secondary-color;
   background-image: url('../img/picture.jpg');
   background-position: center;
   background-size: cover;
   @include bp-small {
-    width: 210px;
-    height: 210px;
-    background-image: url('../img/picture.jpg');
+    width: 250px;
+    height: 250px;
+  }
+  @include bp-medium {
+    height: auto;
   }
 }
