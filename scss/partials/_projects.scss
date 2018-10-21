@@ -1,0 +1,71 @@
+.project {
+  display: grid;
+  grid-gap: 30px;
+
+  @include bp-large {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &-card {
+  background: lighten($primary-color, 5);
+  padding: 1rem 1.2rem;
+  border-bottom: $secondary-color 5px solid;
+  font-weight: normal;
+  @include bp-small {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+
+  &__heading {
+   font-size: 1.5rem;
+   text-align: center;
+  }
+
+  &__sub-txt{
+   margin: 10px;
+   font-size: 1rem;
+   font-weight: normal;
+   font-style: italic;
+   color: $secondary-color;
+   text-align: center;
+
+  }
+
+  &__info {
+   font-size: 1rem;
+   text-align: center;
+   @include bp-small {
+     text-align: left;
+   }
+  }
+
+  &__img {
+    width: 100%;
+    border: 2px solid $white;
+    object-fit: cover;
+    object-position: left;
+    @include bp-medium {
+      height: auto;
+    }
+    @include bp-large {
+      height: 155px;
+    }
+  }
+}
+
+.icon-container {
+  text-align: center;
+  border-bottom: 1px solid $white;
+  padding-bottom: 10px;
+  .fab {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    @include bp-small {
+      font-size: 1.6rem;
+    }
+  }
+ }
+}

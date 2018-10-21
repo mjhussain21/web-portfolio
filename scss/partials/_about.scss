@@ -4,27 +4,20 @@
      grid-gap: 30px;
      grid-template-areas:
      'bioimg'
-     'bio'
-     'job1'
-     'job2'
-     'job3';
+     'bio';
       grid-template-columns: 1fr;
       justify-items: center;
 
       @include bp-small {
         grid-template-areas:
-        'bioimg bio bio'
-        'job1 job2 job3';
+        'bioimg bio bio';
         grid-template-columns: repeat(3, 1fr);
      }
 
      @include bp-medium {
       grid-template-areas:
       'bioimg'
-      'bio'
-      'job1'
-      'job2'
-      'job3';
+      'bio';
       grid-template-columns: 1fr;
      }
   }
@@ -49,81 +42,5 @@
       font-size: 2rem;
     }
   }
-
-  &:nth-child(1n) {
-   border: 4px solid red;
-  }
-  
 }
 
-.job-card {
-  background: lighten($primary-color, 5);
-  padding: 1rem 1.2rem;
-  border-bottom: $secondary-color 5px solid;
-  font-weight: normal;
-  @include bp-small {
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-  }
-
-  &:nth-child(3){
-    grid-area:job1;
-  }
-
-  &:nth-child(4){
-    grid-area:job2;
-  }
-
-  &:nth-child(5){
-    grid-area:job3
-  }
-
-  &__heading {
-   font-size: 1.5rem;
-   text-align: center;
-  }
-
-  &__sub-txt{
-   margin: 10px;
-   font-size: 1rem;
-   font-weight: normal;
-   font-style: italic;
-   color: $secondary-color;
-   text-align: center;
-
-  }
-
-  &__info {
-   font-size: 1rem;
-   
-  }
-
-  &__img {
-    width: 100%;
-    border: 2px solid $white;
-    object-fit: cover;
-    object-position: left;
-    @include bp-medium {
-      height: auto;
-    }
-    @include bp-large {
-      height: 155px;
-    }
-  }
-}
-
-.icon-container {
-  text-align: center;
-  border-bottom: 1px solid $white;
-  padding-bottom: 10px;
-  .fab {
-    font-size: 1.2rem;
-    margin-right: 10px;
-    &:last-of-type {
-      margin-right: 0;
-    }
-    @include bp-small {
-      font-size: 1.6rem;
-    }
-  }
-}
