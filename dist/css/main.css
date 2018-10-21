@@ -236,8 +236,8 @@ a {
           transform: translate3d(0, 0, 0); } }
 
 .portrait {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 160px;
   border-radius: 50%;
   border: solid 3px #eece1a;
   background-image: url("../img/picture.jpg");
@@ -277,6 +277,8 @@ a {
     .about__bio {
       text-align: left;
       font-size: 1.2rem; } }
+  .about__bio-heading {
+    font-size: 2rem; }
 
 .about:nth-child(1n) {
   border: 4px solid red; }
