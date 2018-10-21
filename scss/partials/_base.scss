@@ -30,4 +30,20 @@
       }
     }
   }
+
+  &--v-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.footer {
+  &__txt {
+    margin-top:0;
+    font-size: 0.9rem;
+    @include bp-small{
+      font-size: 1.1rem;
+    }
+  }
 }

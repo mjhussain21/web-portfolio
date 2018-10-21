@@ -154,7 +154,7 @@
 &-branding {
   justify-content: center;
   background-color: $primary-color;
-  height: 25vh;
+  height: 29.5vh;
 
   @include bp-small {
     height: 100vh;
@@ -178,16 +178,15 @@
 }
 
 .portrait {
-  width: 150px;
+  width: 160px;
   height: 160px;
-  border-radius: 50%;
   border: solid 3px $secondary-color;
   background-image: url('../img/picture.jpg');
   background-position: center;
   background-size: cover;
   @include bp-small {
     width: 210px;
-    height: 220px;
+    height: 210px;
     background-image: url('../img/picture.jpg');
   }
 }
