@@ -26,6 +26,11 @@
     margin:0;
   }
   &__text {
-    margin: 0
+    margin: 0;
+    font-size: 0.9rem;
+    @include bp-small {
+      font-size: inherit;
+    }
+
   }
 }
