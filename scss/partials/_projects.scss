@@ -41,12 +41,10 @@
 
   &__img {
     width: 100%;
+    height: auto;
     border: 2px solid $white;
     object-fit: cover;
     object-position: left;
-    @include bp-medium {
-      height: auto;
-    }
     @include bp-large {
       height: 155px;
     }
