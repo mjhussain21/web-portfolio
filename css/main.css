@@ -385,4 +385,8 @@ a {
   margin: 0; }
 
 .contact-box__text {
-  margin: 0; }
+  margin: 0;
+  font-size: 0.9rem; }
+  @media screen and (min-width: 768px) {
+    .contact-box__text {
+      font-size: inherit; } }
