@@ -182,8 +182,8 @@
   width: 43%;
   height: 90%;
   border: solid 3px $secondary-color;
-  background-image: url('../img/picture.jpg');
-  background-position: center;
+  background-image: url('../img/me.jpg');
+  background-position: 2% 10%;
   background-size: cover;
   @include bp-small {
     width: 250px;
